@@ -1,1 +1,28 @@
+show databases; -----for all Instance names.
++---------------------+
+| Database            |
++---------------------+
+| information_schema  |
+| DMACM               |
+| #mysql50#lost+found |
+| lost+found          |
+| mysql               |
+| mysql_backup        |
+| performance_schema  |
++---------------------+
+SELECT User FROM mysql.user; ------for all schemas/users in the instance.
++----------+
+| User     |
++----------+
+| dmaadmin |
+| dmadba   |
+| dmauser  |
+| root     |
+ show tables;------for all tables.
+ORACLE
+select table_name from all_tables;
 
+To find the current databse: 
+SELECT * FROM global_name;
+
+select sys_context( 'userenv', 'current_schema' ) from dual;
